@@ -30,6 +30,8 @@ cat > public_access.json <<EOF
 EOF
 curl -X POST --data-binary @public_access.json -H "Authorization: Bearer $(gcloud auth print-access-token)" -H "Content-Type: application/json" "https://storage.googleapis.com/storage/v1/b/$DEVSHELL_PROJECT_ID-bucket-1/o/btecky.jpeg/acl"
 ```
+* ### Now, Check `Check my Progress` from `Task-1` to `Task-4`
+* ### Thereafter, Run the following Commands in CloudShell 
 ```
 curl -X DELETE -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://storage.googleapis.com/storage/v1/b/$DEVSHELL_PROJECT_ID-bucket-1/o/btecky.jpeg"
 curl -X DELETE -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://storage.googleapis.com/storage/v1/b/$DEVSHELL_PROJECT_ID-bucket-1"
